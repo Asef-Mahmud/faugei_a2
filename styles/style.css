@@ -23,4 +23,232 @@
 
 /* shared styles */
 
+header, main>section{
+    max-width: 1140px;
+    margin: 0 auto;
+}
 
+main{
+    margin-top: 100px;
+}
+
+.head-orange{
+    color: #E95A08;
+}
+
+.information-para{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+}
+
+.button-primary{
+    background-color: #E95A08;
+    font-weight: 600;
+    color: white;
+    width: 270px;
+    height: auto;
+    padding: 19px 50px;
+    border: none;
+}
+
+
+/* Navigation BAr */
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
+
+.listed-items{
+    display: flex;
+    gap: 48px;
+}
+
+.item1{
+    color: #252432;
+    font-weight: 700;
+}
+.item2, .item3{
+    color: #8987A1;
+}
+
+.item4{
+    color: #000000;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.fa-solid{
+    margin-right: 10px;
+}
+
+
+
+/* Banner */
+.banner-head{
+    color: black;
+    font-weight: 700;
+    font-size: 3.5rem;
+    margin-bottom: 0px;
+}
+
+.banner-container{
+    display: flex;
+    padding-top: 100px;
+    margin-top: 0px;
+    align-items: end;
+}
+
+.banner-image, .banner-content{
+    max-width: 570px;
+}
+
+
+
+/* Plants Collection Section */
+
+.flower-collection-content{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#collection-info{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card-flower-name{
+    font-weight:500;
+    margin-bottom: 0px;
+}
+
+.card-flower-price{
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.card{
+    text-align: center;
+    max-width: 270px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+}
+
+/* Plants and Flower Lover Section */
+.flower-plants-lover-container{
+    display: flex;
+    margin-top: 200px;
+    gap: 60px;
+    align-items: center;
+}
+
+.flower-lover-content{
+    padding: 20px;
+}
+
+.flower-lover-listed-items{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 1.25rem;
+    text-align: justify;
+}
+.flower-lover-listed-items>li{
+    margin-bottom: 30px;
+}
+
+.flower-store-image{
+    position: relative;
+}
+
+
+.badge{
+    position: absolute;
+    width: 286px;
+    height: 286px;
+    margin: -110px -180px;
+    box-shadow: -4px 10px 4 0 rgba(0, 0, 0, 0.25);
+}
+
+
+
+/* Mobile Responsiveness */
+@media screen and (max-width:576px) {
+
+    .nav-container, .banner-content{
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .item1, .item2, .item3{
+        display: none;
+    }
+
+    .listed-items{
+        gap: 5px;
+    }
+
+    .banner-container{
+        flex-direction: column-reverse;
+    }
+
+    .banner-image >img{
+        width: 100%;
+    }
+
+    .card-container{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 15px;
+    }
+
+    .card-image{
+     width: 100%;
+    }
+
+    .button-primary{
+        width: 100%;
+        padding: 19px 20px;
+    }
+
+    .flower-collection-content >h1{
+        margin-bottom: 20px;
+    }
+
+    .badge{
+        display: none;
+    }
+
+    .flower-plants-lover-container{
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    .flower-store-image{
+        width: 100%;
+    }
+
+    .flower-lover-content{
+        padding: 20px;
+        padding-top: 0px;
+    }
+
+    .flower-lover-head{
+        margin-top: 0px;
+    }
+
+
+
+
+}
