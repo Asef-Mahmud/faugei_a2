@@ -23,7 +23,7 @@
 
 /* shared styles */
 
-header, .flower-collection-section, .flower-plants-lover-container, .latest-deal-section{
+header, .flower-collection-section, .flower-plants-lover-container, .latest-deal-section, footer{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -333,6 +333,34 @@ nav ul li a{
 }
 
 
+footer{
+    margin-top: 50px;
+}
+
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-listed-items>li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-listed-item{
+    text-decoration: none;
+    color: #6B7280;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    align-items: start;
+}
+
 
 
 
@@ -340,7 +368,7 @@ nav ul li a{
 /* Mobile Responsiveness */
 @media screen and (max-width:576px) {
 
-    .nav-container, .banner-content, .latest-deal-section{
+    .nav-container, .banner-content, .latest-deal-section, footer{
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -439,6 +467,18 @@ nav ul li a{
     .input-container{
         margin-top: 10px;
     }
+
+    .footer-listed-items{
+        padding-left: 0px;
+    }
+
+
+    .footer-container{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    
 
 
 
