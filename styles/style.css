@@ -23,7 +23,7 @@
 
 /* shared styles */
 
-header, main>section{
+header, .flower-collection-section, .flower-plants-lover-container, .latest-deal-section{
     max-width: 1140px;
     margin: 0 auto;
 }
@@ -185,6 +185,9 @@ nav ul li a{
 
 /* Latest Deals Section */
 
+.latest-deal-section{
+    margin-bottom: 120px;
+}
 .latest-deals-content{
     text-align: center;
     margin-bottom: 100px;
@@ -294,6 +297,42 @@ nav ul li a{
 
 
 
+/* Join Section */
+
+.join-section{
+    background-image: url(../assets/news-letter-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    
+}
+
+#head-join{
+    color: white;
+    width: 586px;
+    height: 68px;
+    text-align: center;
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.input-email{
+    width: 644px;
+    height: 48px;
+    font-size: 1rem;
+    padding-left: 30px;
+}
+
+.join-content{
+    text-align: center;
+    padding: 190px 300px;
+}
+
+
 
 
 
@@ -301,7 +340,7 @@ nav ul li a{
 /* Mobile Responsiveness */
 @media screen and (max-width:576px) {
 
-    .nav-container, .banner-content{
+    .nav-container, .banner-content, .latest-deal-section{
         margin-left: 16px;
         margin-right: 16px;
     }
@@ -376,6 +415,29 @@ nav ul li a{
 
     .lone-deal{
         width: 100%;
+    }
+
+    .latest-deal-section{
+        margin-bottom: 300px;
+    }
+
+    .input-email{
+        width: 100%;
+    }
+
+    #head-join{
+        width: 100%;
+        height: auto;
+        font-size: 20px;
+    }
+
+    .join-content{
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+
+    .input-container{
+        margin-top: 10px;
     }
 
 
