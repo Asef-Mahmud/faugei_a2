@@ -28,10 +28,6 @@ header, main>section{
     margin: 0 auto;
 }
 
-main{
-    margin-top: 100px;
-}
-
 .head-orange{
     color: #E95A08;
 }
@@ -49,6 +45,10 @@ main{
     height: auto;
     padding: 19px 50px;
     border: none;
+}
+
+.position-relative{
+    position: relative;
 }
 
 
@@ -95,7 +95,7 @@ nav ul li a{
 .banner-head{
     color: black;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin-bottom: 0px;
 }
 
@@ -183,6 +183,120 @@ nav ul li a{
 }
 
 
+/* Latest Deals Section */
+
+.latest-deals-content{
+    text-align: center;
+    margin-bottom: 100px;
+    margin-top: 120px;
+}
+
+#deals-info{
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 16px;
+}
+
+.deal-image{
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+}
+
+.deal-image1{
+    position: relative;
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+}
+
+.deal-image2{
+    position: relative;
+    filter: brightness(0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 22px;
+}
+
+
+
+.vertical-deal {
+    position: relative;
+    width: 30%;
+    height: calc(50% - 4px/2);
+}
+
+
+.vertical-deal img{
+    margin-bottom: 25px;
+    height: calc(100% - 25px/2);
+}
+
+.lone-deal{
+    position: relative;
+    width: 70%;
+    height: 100%;
+}
+
+
+
+.deal-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+}
+
+.deal-content1{
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.deal-content2{
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.plant-deal{
+    color: white;
+    font-size: 1 rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+
+.grab-the-deal{
+    color: white;
+    font-weight:600;
+    font-size: 1rem;
+}
+
+
+.plant-deals-container{
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    gap: 25px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
 
 /* Mobile Responsiveness */
 @media screen and (max-width:576px) {
@@ -233,19 +347,35 @@ nav ul li a{
     .flower-plants-lover-container{
         margin-top: 40px;
         flex-direction: column;
+        padding: 0 15px;
+        gap: 10px;
     }
 
     .flower-store-image{
         width: 100%;
+        margin-bottom: 0px;
     }
 
     .flower-lover-content{
-        padding: 20px;
-        padding-top: 0px;
+        width: 100%;
+        padding: 0 15px;
     }
 
     .flower-lover-head{
         margin-top: 0px;
+    }
+
+    .plant-deals-container{
+        flex-direction: column;
+        gap: 240px;
+    }
+
+    .vertical-deal{
+        width: 100%;
+    }
+
+    .lone-deal{
+        width: 100%;
     }
 
 
